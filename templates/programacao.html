@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/programacao.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Programação</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper"> 
+            <nav>
+                <div class="logo">
+                    <a href="{% url 'inicio'%}"><img class="logo" src="{% static 'images/logo-fabrica-roxa.svg' %}" alt="logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li class="principal"><a class="header-links" href="{% url 'inicio'%}">INÍCIO</a></li>
+                    <li class="principal"><a class="header-links" href="{% url 'dias_palestras'%}">PALESTRAS</a></li>
+                    <li class="principal"><a class="header-links" href="{% url 'workshops'%}">WORKSHOPS</a></li>
+                    <li class="principal"><a class="header-links" href="{% url 'programacao'%}">PROGRAMAÇÃO</a></li>
+                    <li class="principal"><a class="header-links" href="{% url 'apoiadores'%}">EQUIPE APOIADORA</a></li> 
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+      </header>
+
+    <div class="section-container1">
+        <section class="first-section">
+
+            <div class="wrapper1">
+
+                <div class="container">
+                    <h1 class="title-programacao">Palestras</h1>
+                    <div class="day">
+                        <p class="date">
+                            <a class="date">30/08</a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/BJe5zaultMI" target="_blank" class="class">14h - Abertura</a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/BJe5zaultMI?t=3563" target="_blank" class="class">15h - Cloud for noobs: como funciona a estrutura básica de cloud e o gerenciador OpenStack</a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/BJe5zaultMI?t=6976" target="_blank" class="class">16h - Gestão Emocional em equipes de desenvolvimento de software</a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/BJe5zaultMI?t=10676" target="_blank" class="class">17h - Biometria e Computação Visual: Do Japão ao Brasil passando por Abu Dhabi</a>
+                        </p>
+                    
+                    </div>
+
+                    <div class="day">
+                        <p class="date">
+                            <a  class="date">31/08</a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/ZAERT1x9r_o" target="_blank" class="class">14h - Gestão de Projetos na prática</a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/ZAERT1x9r_o?t=3041" target="_blank" class="class">15h - Estado atual, tendências e novidades do Front-end no mercado</a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/ZAERT1x9r_o?t=6713" target="_blank" class="class">16h - Modern Agile o novo desenvolvimento: quais os impactos das mudanças de cultura e papéis de mercado a partir das novas skills</a>
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/ZAERT1x9r_o?t=9801" target="_blank" class="class">16h50 - O QA do presente já é o QA do futuro!</a>
+                        </p>
+                    </div>
+                    
+
+                    <div class="day">
+                        <p class="date">
+                            <a class="date">01/09</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=0CnaErR3lGQ" target="_blank" class="class">14h - Robótica móvel e visão computacional : entenda o cenário e as tendências</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=0CnaErR3lGQ" target="_blank" class="class">15h - Implementação de um protótipo de jogo no estilo Top-Down Action</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=0CnaErR3lGQ" target="_blank" class="class">16h - Impactos das inovações tecnológicas na cibersegurança</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=0CnaErR3lGQ" target="_blank" class="class">17h - O que você precisa saber antes de se candidatar para vagas nas empresas</a>
+                        </p>
+                    </div>
+
+                    <div class="day">
+                        <p class="date">
+                            <a class="date">02/09</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=mnkbbOVYmGE" target="_blank" class="class">14h - Missão crítica e obsolescência</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=mnkbbOVYmGE" target="_blank" class="class">15h - Deploy: como colocar o sistema em produção de forma simples</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=mnkbbOVYmGE" target="_blank" class="class">16h - NewCo.: Conductor, Dock e Muxi. Construindo algo novo</a>
+                        </p>
+                        <p>
+                            <a href="https://www.youtube.com/watch?v=mnkbbOVYmGE" target="_blank" class="class">17h - Transformação Digital (Humana) – A Esperança está na Liderança</a>
+                        </p>
+                    </div>
+
+                    <div class="day">
+                        <p class="date">
+                            <a class="date">03/09</a>
+                        </p>
+                        <p>
+                            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank" class="class">14h30 - Gerente de Projetos - O papel do Gerente de Projetos</a>
+                        </p>
+                        <p>
+                            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank" class="class">15h - Dev Front - O que faz o Front-end</a>
+                        </p>
+                        <p>
+                            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank" class="class">15h30 - DevOps - CI/CD na Fábrica</a>
+                        </p>
+                        <p>
+                            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank" class="class">16h- Dev Back - Desenvolvimento, por onde começa?</a>
+                        </p>
+                        <p>
+                            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank" class="class">16h30 - Testes - QA - Como trabalha um Engenheiro de Testesa</a>
+                        </p>
+                        <p>
+                            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank" class="class">17h - Análise de Requisitos - O que faz o Analista de Requisitos</a>
+                        </p>
+                        <p>
+                            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank" class="class">17h30 - Jogos - Desenvolvimento de Jogos</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>Sobre Nós</h2>
+                <p>Com DOZE anos de funcionamento, o Projeto Fábrica de Software (FS) já recebeu mais de 1.800 alunos de TI, 40 professores colaboradores, 
+                  firmou mais de 20 parcerias e desenvolveu mais de uma centena de soluções, entregues com transferência tecnológica para os clientes.</p>
+                <ul class="sci">
+                  <li><a href="https://instagram.com/fabricadesoftwareunipe"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://youtube.com/c/Unip%C3%AATech"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.facebook.com/FabricaDeSoftwareDoUnipe/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Links Rápidos</h2>
+                <ul>
+                    <li><a href="{% url 'inicio'%}">Início</a></li>
+                    <li><a href="{% url 'dias_palestras'%}">Palestras</a></li>
+                    <li><a href="{% url 'workshops'%}">Workshops</a></li>
+                    <li><a href="{% url 'programacao'%}">Programação</a></li>
+                    <li><a href="{% url 'apoiadores'%}">Equipe apoiadora</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Informações para Contato</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>Rodovia BR-230,KM 22, S/N - Água Fria, João Pessoa</span>
+                    </li>
+                    
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:walace.bonfim@fabrica.unipe.br">walace.bonfim@fabrica.unipe.br</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>© 2021 Todos os direitos reservados.</p>
+    </div>
+</body>
+<script src="{% static 'js/header.js' %}"></script>
+
+</html>

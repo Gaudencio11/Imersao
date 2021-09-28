@@ -1,0 +1,212 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início</title>
+  <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="{% static 'css/header.css' %}">
+  <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+</head>
+<body>
+  
+  <header class="header">
+    <div class="wrapper"> 
+        <nav>
+            <div class="logo">
+                <a href="{% url 'inicio'%}"><img class="logo" src="{% static 'images/logo-fabrica-roxa.svg' %}" alt="logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li class="principal"><a class="header-links" href="{% url 'inicio'%}">INÍCIO</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'dias_palestras'%}">PALESTRAS</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'workshops'%}">WORKSHOPS</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'programacao'%}">PROGRAMAÇÃO</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'apoiadores'%}">EQUIPE APOIADORA</a></li> 
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="banner">
+      <img src="https://i.ibb.co/tmCtdRW/banner-homepage.png" loading="lazy" alt="banner">
+    </div>
+      <a href="{{link}}" target="_blank">
+        <button class="live">ESTAMOS AO VIVO</button>
+      </a>
+
+    <div class="area-container">
+      <p class="title">Áreas da Fábrica de Software</p>
+      <div class="line"></div>
+      <p class="subtitle">Áreas de TI que você pode atuar dentro da fábrica, e conhecer o ambiente de trabalho</p>
+
+      <div class="cards">
+        <a class="area-link" href="{% url 'workshops'%}">
+          <div class="area">
+            <p class="area-name">BACK-END</p>
+          </div>
+        </a>
+        
+        <a class="area-link" href="{% url 'workshops'%}">
+          <div class="area">
+            <p class="area-name">BANCO DE DADOS</p>
+          </div>
+        </a>
+  
+        <a class="area-link" href="{% url 'workshops'%}">
+          <div class="area">
+            <p class="area-name">FRONT-END</p>
+          </div>
+        </a>
+        
+        <a class="area-link" href="{% url 'workshops'%}">
+          <div class="area">
+            <p class="area-name">TESTES</p>
+          </div>
+        </a>
+  
+        <a class="area-link" href="{% url 'workshops'%}">
+          <div class="area">
+            <p class="area-name">GERENTE<br/> DE PROJETO</p>
+          </div>
+        </a>
+        
+        <a class="area-link" href="{% url 'workshops'%}">
+          <div class="area">
+            <p class="area-name">JOGOS</p>
+          </div>
+        </a>
+        <a class="area-link" href="{% url 'workshops'%}">
+          <div class="area">
+            <p class="area-name">MOBILE</p>
+          </div>
+        </a>
+        <a class="area-link" href="{% url 'workshops'%}">
+          <div class="area">
+            <p class="area-name">ANÁLISE<br/>DE REQUISITOS</p>  
+          </div>
+        </a>
+
+        <a class="area-link" href="{% url 'workshops'%}">
+          <div class="area">
+            <p class="area-name">DEVOPS</p>
+          </div>
+        </a>
+        
+      </div>
+      
+    </div>
+
+    <div class="info-container">
+      <div class="info-home">
+        <img class="icon" src="{%static 'images/renovation.png' %}" alt="">
+        <p class="info-title">Workshops</p>
+        <p class="info-description">Assista workshops ministrados por veteranos e adquira o conhecimento para usar nos projetos.</p>
+      </div>
+    
+      <div class="info-home">
+        <img class="icon" src="{%static 'images/industria-40.png' %}" alt="">
+        <p class="info-title">Empresas</p>
+        <p class="info-description">Grandes empresas regionais são parceiras e estão de olho em você. <br/>Não perde essa!</p>
+      </div>
+
+      <div class="info-home">
+        <img class="icon" src="{%static 'images/certificado-de-garantia.png' %}" alt="">
+        <p class="info-title">Certificados</p>
+        <p class="info-description">Participando da fábrica, você ganha certificados que contam como horas complementares!</p>
+      </div>
+
+      <div class="info-home">
+        <img class="icon" src="{%static 'images/handshake.png' %}" alt="">
+        <p class="info-title">Mercado de Trabalho</p>
+        <p class="info-description">A Fábrica te oferece a chance de você criar seu próprio portfólio, e se destacar no mercado.</p>
+      </div>
+    </div>
+
+  <div class="depositions">
+    <p class="title">Depoimentos</p>
+    <div class="line"></div>
+    <p class="subtitle">Olha só o que diz quem fez a Fábrica de Software</p>
+    
+    <div class="cards-container">
+      <div class="card">
+        <p class="card-description">“A Fábrica de Software foi uma experiência 
+          a parte de todo cenário universitário, tive o prazer de estar envolvido 
+          em projetos únicos, estes, me deram a experiência necessária para acelerar
+          minha trajetória de realocação no mercado e em principal, trabalhar com 
+          pessoas maravilhosas.”</p>
+          <div class="short-line"></div>
+          <p class="name">Paulo Rodrigues</p>
+          <p class="course">Sistemas para Internet - 4º período</p>
+        </div>
+        
+        <div class="card">
+          <p class="card-description">“A Fábrica de Software foi algo muito importante na minha experiência como aluno e também como profissional. Trabalhar em equipes nos projetos da fábrica me deu ótimas oportunidades, bastante conhecimento que pude por em prática e treinou minhas soft skills para o mercado de trabalho.”</p>
+            <div class="short-line"></div>
+            <p class="name">Ane Duarte</p>
+            <p class="course">Ciência da Computação - 4º período</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="sec aboutus">
+          <h2>Sobre Nós</h2>
+          <p>Com DOZE anos de funcionamento, o Projeto Fábrica de Software (FS) já recebeu mais de 1.800 alunos de TI, 40 professores colaboradores, 
+            firmou mais de 20 parcerias e desenvolveu mais de uma centena de soluções, entregues com transferência tecnológica para os clientes.</p>
+            <ul class="sci">
+              <li><a href="https://instagram.com/fabricadesoftwareunipe"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://youtube.com/c/Unip%C3%AATech"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.facebook.com/FabricaDeSoftwareDoUnipe/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quickLinks">
+            <h2>Links Rápidos</h2>
+            <ul>
+                <li><a href="{% url 'inicio'%}">Início</a></li>
+                <li><a href="{% url 'dias_palestras'%}">Palestras</a></li>
+                <li><a href="{% url 'workshops'%}">Workshops</a></li>
+                <li><a href="{% url 'programacao'%}">Programação</a></li>
+                <li><a href="{% url 'apoiadores'%}">Equipe apoiadora</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>Informações para Contato</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>Rodovia BR-230,KM 22, S/N - Água Fria, João Pessoa</span>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:walace.bonfim@fabrica.unipe.br">walace.bonfim@fabrica.unipe.br</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="copyrightText">
+    <p>© 2021 Todos os direitos reservados.</p>
+</div>
+
+  
+</body>
+<script src="{% static 'js/header.js' %}"></script>
+</html>

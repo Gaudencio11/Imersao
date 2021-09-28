@@ -1,0 +1,298 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/apoiadores.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <title>Apoiadores</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper"> 
+            <nav>
+                <div class="logo">
+                    <a href="{% url 'inicio'%}"><img class="logo" src="{% static 'images/logo-fabrica-roxa.svg' %}" alt="logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li class="principal"><a class="header-links" href="{% url 'inicio'%}">INÍCIO</a></li>
+                    <li class="principal"><a class="header-links" href="{% url 'dias_palestras'%}">PALESTRAS</a></li>
+                    <li class="principal"><a class="header-links" href="{% url 'workshops'%}">WORKSHOPS</a></li>
+                    <li class="principal"><a class="header-links" href="{% url 'programacao'%}">PROGRAMAÇÃO</a></li>
+                    <li class="principal"><a class="header-links" href="{% url 'apoiadores'%}">EQUIPE APOIADORA</a></li>  
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+      </header> 
+
+    <!--Palestrantes -->
+    <div class="team-container">
+
+        <p class="team">Equipe de Palestrantes</p>
+        <div class="line"></div>
+    </div>
+    <div class="wrapper-flex">
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/marta-la%C3%ADs-dantas-662703144/">
+                <img src="https://i.ibb.co/Z8hY97B/Any-Conv-com-marta-la-s.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Marta Laís</p>
+                <p class="description">LUIZA LABS</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/walter-travassos-22b09922/">
+                <img src="https://i.ibb.co/5kKH4P9/Any-Conv-com-walter-travassos.jpg" alt="" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Walter Travassos</p>
+                <p class="description">UNIPÊ</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/annamed/">
+                <img src="https://i.ibb.co/rv5BXJG/Any-Conv-com-anna-medeiros.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Anna Medeiros</p>
+                <p class="description">VSOFT</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/r%C3%ADvia-ara%C3%BAjo/">
+                <img src="https://i.ibb.co/GvX8jYj/rivia.png" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Rivia Araújo</p>
+                <p class="description">SMN</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/matheussousaf/">
+                <img src="https://i.ibb.co/sQ8DFcY/Any-Conv-com-matheus-figueiredo.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Matheus Figueiredo</p>
+                <p class="description">MATERA</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/hugovlsouza/">
+                <img src="https://i.ibb.co/VqNz5NS/Any-Conv-com-hugo-vieira.jpg" loading="lazy" alt="Any-Conv-com-hugo-vieira" alt="" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Hugo Vieira</p>
+                <p class="description">LAMPP-IT</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/angelo-goncalves/">
+                <img src="https://i.ibb.co/Hg1b1bh/angelo-dias.png" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Angelo Dias</p>
+                <p class="description">INVILLIA</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/leonardo-souto-52811999/">
+                <img src="https://i.ibb.co/Kzjy6xm/Any-Conv-com-leonardo-souto.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Leonardo Souto</p>
+                <p class="description">UNIPÊ</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="http://lattes.cnpq.br/3747782060037756">
+                <img src="https://i.ibb.co/hf2z03Z/thiago-rodrigues.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Thiago Rodrigues</p>
+                <p class="description">UNIPÊ</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/dlpitta/">
+                <img src="https://i.ibb.co/mBzJYpX/Any-Conv-com-daniela-pitta.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Daniela Pitta</p>
+                <p class="description">CONPAY</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/giovannaribeiro/">
+                <img src="https://i.ibb.co/vxWPyxW/Any-Conv-com-giovanna-ribeiro.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Giovanna Ribeiro</p>
+                <p class="description">ONCASE</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/arnoldo-kirchesch-junior-678866171/">
+                <img src="https://i.ibb.co/4mGPrv1/Any-Conv-com-arnoldo-kirchesch.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Arnoldo Kirchesch</p>
+                <p class="description">BTOR</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/inolopesm/">
+                <img src="https://i.ibb.co/rmYxQPw/matheus-inocencio.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Matheus Inocêncio</p>
+                <p class="description">MOOVERY</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/eduardoennes/">
+                <img src="https://i.ibb.co/n6KLnvm/Any-Conv-com-eduardo-ennes.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Eduardo Ennes</p>
+                <p class="description">NEWCO.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/felipesoaresdo/">
+                <img src="https://i.ibb.co/wgvMKwG/Any-Conv-com-felipe-soares.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Felipe Soares</p>
+                <p class="description">UNIPÊ</p>
+            </div>
+        </div>
+    </div>
+
+<!--Equipe de desenvolvimento -->
+    <div class="team-container">
+
+        <p class="team">Equipe Desenvolvedora</p>
+        <div class="line"></div>
+    </div>
+    <div class="wrapper-flex">
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/lukasdsf/">
+                <img src="https://i.ibb.co/3zZLs40/lukas.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Lukas Figueiredo</p>
+                <p class="description ">Desenvolvedor Front-End</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/juan-alencar/">
+                <img src="https://i.ibb.co/fSMPFvy/juan.png" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Juan Alencar</p>
+                <p class="description ">Desenvolvedor Front-End</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/marcos-otavio-novais-a550a0217">
+                <img src="https://i.ibb.co/5M2b08s/marcos.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Marcos Novais</p>
+                <p class="description ">Desenvolvedor Back-End</p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <a href="https://www.linkedin.com/in/walace-sartori-bonfim/">
+                <img src="https://i.ibb.co/zXgfS40/wallace.jpg" alt="" loading="lazy" class="responsive-img">
+            </a>
+            <div class="description-container ">
+                <p class="name ">Walace Sartori Bonfim</p>
+                <p class="description ">Techleader</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>Sobre Nós</h2>
+                <p>Com DOZE anos de funcionamento, o Projeto Fábrica de Software (FS) já recebeu mais de 1.800 alunos de TI, 40 professores colaboradores, 
+                  firmou mais de 20 parcerias e desenvolveu mais de uma centena de soluções, entregues com transferência tecnológica para os clientes.</p>
+                <ul class="sci">
+                  <li><a href="https://instagram.com/fabricadesoftwareunipe"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://youtube.com/c/Unip%C3%AATech"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.facebook.com/FabricaDeSoftwareDoUnipe/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Links Rápidos</h2>
+                <ul>
+                    <li><a href="{% url 'inicio'%}">Início</a></li>
+                    <li><a href="{% url 'dias_palestras'%}">Palestras</a></li>
+                    <li><a href="{% url 'workshops'%}">Workshops</a></li>
+                    <li><a href="{% url 'programacao'%}">Programação</a></li>
+                    <li><a href="{% url 'apoiadores'%}">Equipe apoiadora</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Informações para Contato</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>Rodovia BR-230,KM 22, S/N - Água Fria, João Pessoa</span>
+                    </li>
+                    
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:walace.bonfim@fabrica.unipe.br">walace.bonfim@fabrica.unipe.br</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText ">
+        <p>© 2021 Todos os direitos reservados.</p>
+    </div>
+</body>
+<script src="{% static 'js/header.js' %}"></script>
+</html>

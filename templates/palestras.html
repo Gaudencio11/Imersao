@@ -1,0 +1,352 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palestras</title>
+  <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="{% static 'css/header.css' %}">
+  <link rel="stylesheet" href="{% static 'css/palestras.css' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrapper"> 
+        <nav>
+            <div class="logo">
+                <a href="{% url 'inicio'%}"><img class="logo" src="{% static 'images/logo-fabrica-roxa.svg' %}" alt="logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li class="principal"><a class="header-links" href="{% url 'inicio'%}">INÍCIO</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'dias_palestras'%}">PALESTRAS</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'workshops'%}">WORKSHOPS</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'programacao'%}">PROGRAMAÇÃO</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'apoiadores'%}">EQUIPE APOIADORA</a></li>  
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+  </header>  
+  <div class="wrapper-flex">
+
+  {% if dia == '1' %}
+  
+    <div class="container">
+        <div class='banner-img' id="responsive-img">
+            <img src="https://i.ibb.co/xJJrvMw/abertura.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name">Abertura</p>
+            <p class="description">30/08 - 14h10 ás 14h55</p>
+            <a href="https://youtu.be/BJe5zaultMI" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://bit.ly/38qcM4s" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class='banner-img' id="responsive-img">
+            <img src="https://i.ibb.co/hgRmp7L/marta-lais-luiza-labs1.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Cloud for Noobs: Como funciona a estrutura básica de Cloud e o gerenciador OpenStack">Cloud for Noobs: Como funciona a estrutura básica de Cloud e o gerenciador OpenStack</p>
+            <p class="description">30/08 - 15h ás 15h45</p>
+            <a href="https://youtu.be/BJe5zaultMI?t=3563" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://bit.ly/2V1FS7i" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/SyKnM4W/walter-travassos-unipe1.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Gestão emocional em equipes de desenvolvimento de software">Gestão emocional em equipesde desenvolvimento de software</p>
+            <p class="description">30/08 - 16h ás 16h45</p>
+            <a href="https://youtu.be/BJe5zaultMI?t=6976" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://bit.ly/3kIfjNo" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/YPbdhv7/anna-medeiros-vsoft1.png" loading="lazy" alt="banner" class="responsive-img">
+
+        </div>
+        <div class="description-container">
+            <p class="name" title="Biometria e computação visual: do Japão ao Brasil passando por Abu Dhabi">Biometria e computação visual: do Japão ao Brasil passando por Abu Dhabi</p>
+            <p class="description">30/08 - 17h00 ás 17h45</p>
+            <a href="https://youtu.be/BJe5zaultMI?t=10676" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://bit.ly/3jt4rU7" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+
+
+    {% elif dia == '2' %}
+
+    <div class="container">
+        <div class='banner-img' id="responsive-img">
+            <img src="https://i.ibb.co/mb9YNJY/rivia-araujo-smn.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Gestão de Projetos na prática">Gestão de Projetos na prática</p>
+            <p class="description">31/08 - 14h10 ás 14h55</p>
+            <a href="https://youtu.be/ZAERT1x9r_o" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/DfeAiDp59mr8sXFc6" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/HTqxpdR/matheus-figueiredo-matera.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Estado atual, tendências e novidades do Front-end no mercado">Estado atual, tendências e novidades do Front-end no mercado</p>
+            <p class="description">31/08 - 15h ás 15h45</p>
+            <a href="https://youtu.be/ZAERT1x9r_o?t=3041" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/JiStDELznST6znTM8" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/Th55CQ4/hugo-vieira-lampp-it.png" loading="lazy" alt="banner" class="responsive-img">
+
+        </div>
+        <div class="description-container">
+            <p class="name" title="Modern Agile o novo desenvolvimento: quais os impactos das mudanças de cultura e papéis de mercado a partir das novas skills">Modern Agile o novo desenvolvimento: quais os impactos das mudanças de cultura e papéis de mercado a partir das novas skills</p>
+            <p class="description">31/08 - 16h ás 16h45</p>
+            <a href="https://youtu.be/ZAERT1x9r_o?t=6713" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/XQPaVrzfUTtvJRPPA" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/0sMssjN/angelo-dias-invillia.png" loading="lazy" alt="banner" class="responsive-img">
+
+        </div>
+        <div class="description-container">
+            <p class="name" title="O QA do presente já é o QA do futuro!">O QA do presente já é o QA do futuro!</p>
+            <p class="description">31/08 - 17h ás 17h45</p>
+            <a href="https://youtu.be/ZAERT1x9r_o?t=9801" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/3G5MEcPBMp2VJMr86" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+    {% elif dia == '3' %}
+
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/JtHsT4j/leonardo-souto-unipe.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Robótica móvel e visão computacional : entenda o cenário e as tendências">Robótica móvel e visão computacional : entenda o cenário e as tendências</p>
+            <p class="description">01/09 - 14h ás 14h55</p>
+            <a href="https://youtu.be/0CnaErR3lGQ" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/go4nYY285gUcvGT57" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/zfYkgHz/thiago-rodrigues-unipe.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Implementação de um protótipo de jogo no estilo Top-Down Action">Implementação de um protótipo de jogo no estilo Top-Down Action</p>
+            <p class="description">01/09 - 15h ás 15h45</p>
+            <a href="https://youtu.be/0CnaErR3lGQ?t=3428" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/RwWLxNftcFoxB43Q6" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/PzycLHk/daniela-pitta-conpay.png" loading="lazy" alt="banner" class="responsive-img"></div>
+        <div class="description-container">
+            <p class="name" title="Impactos das inovações tecnológicas na cibersegurança">Impactos das inovações tecnológicas na cibersegurança</p>
+            <p class="description">01/09 - 16h ás 16h45</p>
+            <a href="https://youtu.be/0CnaErR3lGQ?t=7055" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/XNDs144gd9mLggUV6" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+
+    {% elif dia == '4' %}
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/5Mdvj3K/arnoldo-kirchesck.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Missão crítica e obsolescência">Missão crítica e obsolescência</p>
+            <p class="description">02/09 - 14h ás 14h55</p>
+            <a href="https://www.youtube.com/watch?v=mnkbbOVYmGE" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/rYrozPmu7G23KTBa8" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/9N8p7BY/matheus-inocencio-moovery.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Deploy: como colocar o sistema em produção de forma simples">Deploy: como colocar o sistema em produção de forma simples</p>
+            <p class="description">02/09 - 15h ás 15h45</p>
+            <a href="https://www.youtube.com/watch?v=mnkbbOVYmGE" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/JqyvzhPTGyjZdtZR6" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/DRj5mcT/eduardo-ennes-newco.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="NewCo.: Conductor, Dock e Muxi. Construindo algo novo">NewCo.: Conductor, Dock e Muxi. Construindo algo novo</p>
+            <p class="description">02/09 - 16h ás 16h45</p>
+            <a href="https://www.youtube.com/watch?v=mnkbbOVYmGE" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/trvAzG4Cyw22kdNY6" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/5srnVwf/felipe-soares-unipe.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Transformação Digital (Humana) – A Esperança está na Liderança">Transformação Digital (Humana) – A Esperança está na Liderança</p>
+            <p class="description">02/09 - 17h ás 17h45</p>
+            <a href="https://www.youtube.com/watch?v=mnkbbOVYmGE" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            <a href="https://forms.gle/R1nTQG2wy75htAKd67" target="_blank"><button class="card-btn"><i class="fa fa-calendar" aria-hidden="true"></i> Presença</button></a>
+        </div>
+    </div>
+
+    {% elif dia == '5' %}
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/rs2Wbpb/paulo-rodrigues.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Gerente de Projetos">Gerente de Projetos</p>
+            <p class="description">03/09 - 14h30 ás 15h</p>
+            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/3MtjBZD/juan-e-lukas.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="DevFront">Front-end</p>
+            <p class="description">03/09 - 15h ás 15h30</p>
+            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/DRvCLTS/matheus-inocencio.pngg" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="DevOps">DevOps</p>
+            <p class="description">03/09 - 15h30 ás 16h</p>
+            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/sqr9V9s/marcos-novais.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="DevBack">Back-end</p>
+            <p class="description">03/09 - 16h ás 16h30h</p>
+            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/Cbwc4Pg/isabelle-ramalho.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Testes - QA">Testes - QA</p>
+            <p class="description">03/09 - 16h30 ás 17h</p>
+            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/S71YHsb/daniel-marques.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Análise de Requisitos">Análise de Requisitos</p>
+            <p class="description">03/09 - 17h ás 17h30</p>
+            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class='banner-img'>
+            <img src="https://i.ibb.co/0CqJ521/vinicius-pedrosa.png" loading="lazy" alt="banner" class="responsive-img">
+        </div>
+        <div class="description-container">
+            <p class="name" title="Jogos">Jogos</p>
+            <p class="description">03/09 - 17h30 ás 18h</p>
+            <a href="https://cruzeirodosul-edu-br.zoom.us/j/98668486595?pwd=RGxMSXdiMUkrd3c0Q0VxQ2duU2tEQT09#success" target="_blank"><button class="card-btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Ingressar</button></a>
+        </div>
+    </div>
+    
+
+    {% else %} 
+    <h1>Tem alguma coisa errada</h1>
+
+    {% endif %}
+</div>
+<div class="fa-3x arrow" >
+    <a class="back" href="{% url 'dias_palestras'%}"><i class="fa fa-arrow-circle-left activ " aria-hidden="true"></i></a>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="sec aboutus">
+            <h2>Sobre Nós</h2>
+            <p>Com DOZE anos de funcionamento, o Projeto Fábrica de Software (FS) já recebeu mais de 1.800 alunos de TI, 40 professores colaboradores, 
+              firmou mais de 20 parcerias e desenvolveu mais de uma centena de soluções, entregues com transferência tecnológica para os clientes.</p>
+            <ul class="sci">
+              <li><a href="https://instagram.com/fabricadesoftwareunipe"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://youtube.com/c/Unip%C3%AATech"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.facebook.com/FabricaDeSoftwareDoUnipe/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quickLinks">
+            <h2>Links Rápidos</h2>
+            <ul>
+                <li><a href="{% url 'inicio'%}">Início</a></li>
+                <li><a href="{% url 'dias_palestras'%}">Palestras</a></li>
+                <li><a href="{% url 'workshops'%}">Workshops</a></li>
+                <li><a href="{% url 'programacao'%}">Programação</a></li>
+                <li><a href="{% url 'apoiadores'%}">Equipe apoiadora</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>Informações para Contato</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>Rodovia BR-230,KM 22, S/N - Água Fria, João Pessoa</span>
+                </li>
+                
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:walace.bonfim@fabrica.unipe.br">walace.bonfim@fabrica.unipe.br</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="copyrightText">
+    <p>© 2021 Todos os direitos reservados.</p>
+</div>
+</body>
+<script src="{% static 'js/header.js' %}"></script>
+
+</html>

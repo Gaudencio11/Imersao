@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dias de Palestras</title>
+  <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="{% static 'css/header.css' %}">
+  <link rel="stylesheet" href="{% static 'css/days.css' %}">
+  <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper"> 
+        <nav>
+            <div class="logo">
+                <a href="{% url 'inicio'%}"><img class="logo" src="{% static 'images/logo-fabrica-roxa.svg' %}" alt="logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li class="principal"><a class="header-links" href="{% url 'inicio'%}">INÍCIO</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'dias_palestras'%}">PALESTRAS</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'workshops'%}">WORKSHOPS</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'programacao'%}">PROGRAMAÇÃO</a></li>
+                <li class="principal"><a class="header-links" href="{% url 'apoiadores'%}">EQUIPE APOIADORA</a></li>  
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+  </header> 
+
+<div class="cards-container">
+  <div class="card">
+    <p class="title">PALESTRAS DIA 30/08</p>
+    <p class="date">14h às 18h</p>
+    <a href="{% url 'palestras' '1'%}"><button class="card-btn">Saber mais</button></a>
+  </div>
+
+  <div class="card">
+    <p class="title">PALESTRAS DIA 31/08</p>
+    <p class="date">14h às 18h</p>
+    <a href="{% url 'palestras' '2'%}"><button class="card-btn">Saber mais</button></a>
+  </div>
+  
+  <div class="card">
+    <p class="title">PALESTRAS DIA 01/09</p>
+    <p class="date">14h às 18h</p>
+    <a href="{% url 'palestras' '3'%}"><button class="card-btn">Saber mais</button></a>
+  </div>
+  
+  <div class="card">
+    <p class="title">PALESTRAS DIA 02/09</p>
+    <p class="date">14h às 18h</p>
+    <a href="{% url 'palestras' '4'%}"><button class="card-btn">Saber mais</button></a>
+  </div>
+
+   <div class="card">
+    <p class="title">PALESTRAS DIA 03/09</p>
+    <p class="date">14h às 18h</p>
+    <a href="{% url 'palestras' '5'%}"><button class="card-btn">Saber mais</button></a>
+  </div> 
+
+  
+</div>
+<footer>
+  <div class="footer-container">
+      <div class="sec aboutus">
+          <h2>Sobre Nós</h2>
+          <p>Com DOZE anos de funcionamento, o Projeto Fábrica de Software (FS) já recebeu mais de 1.800 alunos de TI, 40 professores colaboradores, 
+            firmou mais de 20 parcerias e desenvolveu mais de uma centena de soluções, entregues com transferência tecnológica para os clientes.</p>
+          <ul class="sci">
+            <li><a href="https://instagram.com/fabricadesoftwareunipe"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://youtube.com/c/Unip%C3%AATech"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/FabricaDeSoftwareDoUnipe/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          </ul>
+      </div>
+      <div class="sec quickLinks">
+          <h2>Links Rápidos</h2>
+          <ul>
+              <li><a href="{% url 'inicio'%}">Início</a></li>
+              <li><a href="{% url 'dias_palestras'%}">Palestras</a></li>
+              <li><a href="{% url 'workshops'%}">Workshops</a></li>
+              <li><a href="{% url 'programacao'%}">Programação</a></li>
+              <li><a href="{% url 'apoiadores'%}">Equipe apoiadora</a></li>
+          </ul>
+      </div>
+      <div class="sec contact">
+          <h2>Informações para Contato</h2>
+          <ul class="info">
+              <li>
+                  <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                  <span>Rodovia BR-230,KM 22, S/N - Água Fria, João Pessoa</span>
+              </li>
+              
+              <li>
+                  <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                  <p><a href="mailto:walace.bonfim@fabrica.unipe.br">walace.bonfim@fabrica.unipe.br</a></p>
+              </li>
+          </ul>
+      </div>
+  </div>
+</footer>
+<div class="copyrightText">
+  <p>© 2021 Todos os direitos reservados.</p>
+</div>
+
+</body>
+<script src="{% static 'js/header.js' %}"></script>
+</html>
