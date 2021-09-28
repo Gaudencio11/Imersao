@@ -4,6 +4,6 @@ Serve para fornecer um canal de informações e de disponibilização dos links 
 
 Precisa ser configurado para rodar localmente
 
-DEBUG = TRUE
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DATABASE para sqlite3 (está comentado no código)
+- DEBUG = TRUE
+- EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+- DATABASE para sqlite3 (está comentado no código)
