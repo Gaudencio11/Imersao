@@ -1,6 +1,8 @@
+#Imersão Fábrica de Software
+
 ![](https://raw.githubusercontent.com/Gaudencio11/imersao/main/static/images/LOGO-ROXA-LETREIRO-HORIZONTAL.png)
 
-**Web page da imersão da Fábrica de Software 2021.1**
+**Imersion Web page from Fábrica de Software 2021.2**
 
 ![](https://img.shields.io/badge/Django-3-blue) ![](https://img.shields.io/badge/Python-3-blue) ![](https://img.shields.io/badge/Pillow-8.2.0-green) ![](https://img.shields.io/badge/psycopg2-newest_version-green)
 
