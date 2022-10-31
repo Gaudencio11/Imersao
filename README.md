@@ -1,3 +1,4 @@
+![](https://raw.githubusercontent.com/Gaudencio11/imersao/main/static/images/LOGO-ROXA-LETREIRO-HORIZONTAL.png)
 
 **Web page da imersão da Fábrica de Software 2021.1**
 
